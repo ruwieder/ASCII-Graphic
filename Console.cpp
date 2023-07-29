@@ -4,7 +4,6 @@
   #define SYMBOL_CONST 3.5
   #define SYMBOLS_COUNT 8
 #endif
-
 namespace My{
 
 class Console{
