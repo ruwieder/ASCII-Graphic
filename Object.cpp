@@ -16,3 +16,8 @@ class Plane:Object {
 class Cube:Object {
     coord_type get_collision_length();
 };
+
+class SkySphere {
+    coord_type get_collision_length();
+
+};
