@@ -6,10 +6,10 @@
 #include "Object.cpp"
 
 void resize_console(){
-    std::string _width = std::to_string(CONSOLE_WIDTH);
-    std::string _height = std::to_string(CONSOLE_HEIGHT + 2);
-    std::string _command = "mode " + _width + ", " + _height;
-    system(_command.c_str());
+    std::string width = std::to_string(CONSOLE_WIDTH);
+    std::string height = std::to_string(CONSOLE_HEIGHT + 2);
+    std::string command = "mode " + width + ", " + height;
+    system(command.c_str());
 }
 
 using My::Console;
