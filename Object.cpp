@@ -8,6 +8,11 @@ public:
 };
 
 
+class Sphere:Object{
+    coord_type get_collision_length();
+};
+
+
 class Plane:Object {
     coord_type get_collision_length();
 };
@@ -17,7 +22,8 @@ class Cube:Object {
     coord_type get_collision_length();
 };
 
-class SkySphere {
-    coord_type get_collision_length();
 
+class SkySphere:Sphere {
+    coord_type get_collision_length();
 };
+
