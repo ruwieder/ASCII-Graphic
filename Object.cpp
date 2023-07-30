@@ -1,6 +1,8 @@
 #include <stdint.h>
-#define COORD_TYPE uint16_t
+#include "Coord.cpp"
 
 struct Object{
-    COORD_TYPE x, y, z;
+public:
+    Coord pos;
+    virtual coord_type get_collision_length();
 };

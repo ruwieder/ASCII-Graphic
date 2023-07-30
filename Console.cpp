@@ -4,6 +4,9 @@
   #define SYMBOL_CONST 3.5
   #define SYMBOLS_COUNT 8
 #endif
+#include <stdint.h>
+#include <iostream>
+
 namespace My{
 
 class Console{
@@ -29,7 +32,13 @@ public:
     }
 
     void set(uint16_t x, uint16_t y, uint8_t value){
+        if (x < 0 || x > CONSOLE_WIDTH ||
+            y < 0 || y > CONSOLE_HEIGHT)
+            {
+                throw;
+            }
         video_buffer[y * CONSOLE_WIDTH + x] = value;
+
     }
 
     void clear_buffer(){

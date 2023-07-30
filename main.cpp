@@ -4,6 +4,7 @@
 #define SYMBOL_CONST 3.5
 #define SYMBOLS_COUNT 8
 #include "Console.cpp"
+#include "Coord.cpp"
 #define CONSOLE_MODE_COMMAND "mode 150, 52"
 
 using My::Console;
@@ -11,8 +12,10 @@ using My::Console;
 int main(){
     system(CONSOLE_MODE_COMMAND); // resize Windows console
     Console console = Console();
-
-    console.set(100, 43, 255);
+    for (size_t i = 20; i < 50; i++){
+        console.set(i + 50, i, 255);
+    }
+    
     console.draw_buffer();
 
     system("pause");
