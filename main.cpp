@@ -1,8 +1,5 @@
 #include <iostream>
-#define CONSOLE_WIDTH 150
-#define CONSOLE_HEIGHT 50
-#define SYMBOL_CONST 3.5
-#define SYMBOLS_COUNT 8
+#include "settings.cpp"
 #include "Console.cpp"
 #include "Coord.cpp"
 #include "Object.cpp"

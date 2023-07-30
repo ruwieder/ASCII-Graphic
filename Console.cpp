@@ -1,9 +1,4 @@
-#ifndef CONSOLE_WIDTH
-  #define CONSOLE_WIDTH 150
-  #define CONSOLE_HEIGHT 50
-  #define SYMBOL_CONST 3.5
-  #define SYMBOLS_COUNT 8
-#endif
+#include "settings.cpp"
 #include <stdint.h>
 #include <iostream>
 
