@@ -1,7 +1,11 @@
 #include <vector>
 #include "Coord.cpp"
 #include "Object.cpp"
+#include "settings.cpp"
+#include <cmath>
 #pragma once
+
+const float screen_width = 16.f / tan(HALF_FOV);
 
 class Scene {
 private:
