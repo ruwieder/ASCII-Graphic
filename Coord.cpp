@@ -1,4 +1,5 @@
 typedef unsigned short coord_type;
+#pragma once
 
 struct Coord{
     coord_type x;
