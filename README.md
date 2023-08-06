@@ -1,2 +1,2 @@
-# ASCII-Graphic (V.I.P.)
+# ASCII-Graphic (W.I.P.)
 Trying to make ascii graphic tools
