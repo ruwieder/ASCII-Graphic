@@ -6,16 +6,12 @@
 #include <cmath>
 #pragma once
 
-const float screen_width = 16.f / tan(HALF_FOV);
 
 class Scene {
 private:
-    Coord camera_pos = Coord(0x7fff, 0x7fff, 0x7fff);
-    Coord camera_direction = Coord(0, 0, 0);
     std::vector<Camera> cameras{};
     std::vector<Cube> cubes{};
     std::vector<Plane> planes{};
-
 public:
     void add_object(Cube cube){
         cubes.push_back(cube);
@@ -25,4 +21,9 @@ public:
         planes.push_back(plane);
     };
 
+    void add_camera(Camera camera){
+        camera.id = cameras.size();
+        camera.scene = this;
+        cameras.push_back(camera);
+    };
 };
