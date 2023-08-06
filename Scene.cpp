@@ -1,6 +1,7 @@
 #include <vector>
 #include "Coord.cpp"
 #include "Object.cpp"
+#include "Camera.cpp"
 #include "settings.cpp"
 #include <cmath>
 #pragma once
@@ -11,7 +12,7 @@ class Scene {
 private:
     Coord camera_pos = Coord(0x7fff, 0x7fff, 0x7fff);
     Coord camera_direction = Coord(0, 0, 0);
-
+    std::vector<Camera> cameras{};
     std::vector<Cube> cubes{};
     std::vector<Plane> planes{};
 
