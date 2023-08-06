@@ -8,22 +8,22 @@ public:
 };
 
 
-class Sphere:Object{
+struct Sphere:Object{
     coord_type get_collision_length();
 };
 
 
-class Plane:Object {
+struct Plane:Object {
     coord_type get_collision_length();
 };
 
 
-class Cube:Object {
+struct Cube:Object {
     coord_type get_collision_length();
 };
 
 
-class SkySphere:Sphere {
+struct SkySphere:Sphere {
     coord_type get_collision_length();
 };
 
