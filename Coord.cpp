@@ -1,4 +1,5 @@
 typedef unsigned short coord_type;
+#define COORD_MAX 0xffffui16;
 #pragma once
 
 struct Coord{
