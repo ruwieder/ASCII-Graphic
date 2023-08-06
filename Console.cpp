@@ -1,5 +1,6 @@
 #include "settings.cpp"
 #include <stdint.h>
+#include <string>
 #include <iostream>
 
 namespace My{
@@ -50,6 +51,13 @@ public:
                 std::cout << (symbols[video_buffer[i * CONSOLE_WIDTH + j] >> 5]);
             }
         }
+    }
+
+    void resize_console(){
+        std::string width = std::to_string(CONSOLE_WIDTH);
+        std::string height = std::to_string(CONSOLE_HEIGHT + 2);
+        std::string command = "mode " + width + ", " + height;
+        system(command.c_str());
     }
 };
 }
